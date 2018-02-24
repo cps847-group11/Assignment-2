@@ -18,3 +18,4 @@ script:
 
 #can do additional things, say send out reports, which we will discuss next time
 after_success:
+  - codecov --token=8aad2a47-9e1f-44d7-a0d9-28db93b974a7 # upload coverage report to codecov.io
