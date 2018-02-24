@@ -19,11 +19,3 @@ script:
 #can do additional things, say send out reports, which we will discuss next time
 after_success:
   - codecov --token=8aad2a47-9e1f-44d7-a0d9-28db93b974a7 # upload coverage report to codecov.io
-
-  deploy:
-  provider: s3
-  access_key_id: AKIAI7TOODNUCFB2T76A
-  secret_access_key: 
-  bucket: avm-example.com
-  local-dir: s3_play/sample_html
-  region: us-west-2
