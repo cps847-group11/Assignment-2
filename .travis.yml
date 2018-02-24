@@ -20,3 +20,6 @@ deploy:
   acl: ''
   on:
     repo: cps847-group11/Assignment-2
+    bucket: avm-example.com
+  local-dir: s3_play/sample_html
+  region: us-west-2
