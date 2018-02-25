@@ -10,11 +10,3 @@ script:
 - coverage run ./ci_play/test.py
 after_success:
 - codecov --token=8aad2a47-9e1f-44d7-a0d9-28db93b974a7
-deploy:
-  provider: s3
-  access_key_id: AKIAJOBSSQF232T4RO7A
-  secret_access_key:
-    secure: MvPF5P6cds8hC7GKiNuwbDpBgb2ofJ07jlcISk9BMCbBdx/eHFrYRhKPzofqVr/nxey+NDzEHmzvqdtrN0d/gA16jz/KlhNiIoxE1w6/OYJhAEYGXSVt299IFuBRYvE1T+p6vAvyGCc9FpPlBEYnqPSWwKBkX6Rj0Gn8IwlpjPjCPa7WPbHNN8EBJ7TCpk1g2fFvUAB48kTaTwJ4jdwvOaJ5cPiuQyFgMHSduc7fNZZooCKqTx/1xCi5qvDifLY4ysAlkNt1PWWOhEgiPIEJT92+/jlV4fCuuoQ2MW2hVUZn5A15zJ8/tqYUXzuk5AwMi/xQEjsC9u/dIShvivtIBfwtCHEymS4cX+d5SjXyCmbgjZeRB8j0opv/X+BRhp6Q3+P8t+qxXTALzlgJA81Vs8JOcRNgWl1RtQO2eBmaIOgv0EszI4zIuQs4xYfvLDB9mDUkd1OISsUY+I/4VPv+FfpAboUKkajFPzY3cd7MW/j5bhDVKpmBjIc71UeAXoUfUekr698SXaOqkQLZ0jyzkUB0Os2ieluAd9WxxBZ2daL4O7eaT5csE4KCQUH2u76KGNJjgAjGFQ75M4b6ZOd1BRMoHLD71Mmq1HbsjCunvMlb5Q33cvUJr7FBOlVDmuBxB7bXcpvyWDHEbMYG6IkI+i4vT4zdcfO/8DEtJe06ii4=
-  bucket: cps847-group11.com
-  skip_cleanup: true
-  acl: public_read
