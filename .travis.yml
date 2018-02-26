@@ -10,3 +10,10 @@ script:
 - coverage run ./ci_play/test.py
 after_success:
 - codecov --token=8aad2a47-9e1f-44d7-a0d9-28db93b974a7
+
+deploy:
+    provider: s3
+
+    bucket: www.cps847-group11v2.com
+    local-dir: cps847-group11v2/
+    region: ca-central-1
