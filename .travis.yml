@@ -13,7 +13,8 @@ after_success:
 
 deploy:
     provider: s3
-
-    bucket: www.cps847-group11v2.com
+    access_key_id: AKIAJ7Y6K55KXP73GENQ
+    secret_access_key: 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
+    bucket: cps847-group11v2.com
     local-dir: cps847-group11v2/
     region: ca-central-1
